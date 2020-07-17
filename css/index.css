@@ -76,6 +76,7 @@ nav{
 }
 nav a{
     color:#626262;
+    
 }
 nav span{
     border-left:3px solid #626262;
@@ -133,4 +134,23 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+
+/* The media quaries start from here*/
+/*This media quaries is for max-width:500px*/
+@media(max-width:500px){
+    nav {
+        width:55%; 
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .title-container div {
+        border:2px solid purple;
+        width:100%;
+    }
+    .artist img{
+        border:2px solid green;
+    }
 }
