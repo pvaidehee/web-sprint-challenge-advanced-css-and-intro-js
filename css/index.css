@@ -137,6 +137,7 @@ button:hover{
 }
 
 
+
 /* The media quaries start from here*/
 /*This media quaries is for max-width:500px*/
 @media(max-width:500px){
@@ -147,10 +148,20 @@ button:hover{
         font-size: 4rem;
     }
     .title-container div {
-        border:2px solid purple;
         width:100%;
     }
-    .artist img{
-        border:2px solid green;
+    .artists-container{
+       
+        flex-direction:column;
+        align-items: center;   
+        
+    }
+    .artist {
+      
+        width:100%;
+    }
+    .bio{
+
+       margin: 0 -8%;
     }
 }
