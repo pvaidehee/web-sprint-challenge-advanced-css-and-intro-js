@@ -236,15 +236,33 @@ function getArtistByIndex(array, ind) {
   console.log(getArtistByIndex(artists, 0));
   /**
 
-/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
+/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000)
+example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
-
-  /* Code here */
-
+let "1900" = [];
+function get20s(arr){
+for (let i=0; i<=1900; i++){
+  if(artists.years === arr[i]){
+    newArr.push(arr[i]);
+  }
+}
+return newArr;  
 }
 
+console.log(get20s(artists, 1900));
 
+// const newArr = [];
+//  function getReviewByRating(arr, rating) {
+//   for(let i =0; i<arr.length; i++){
+//     if(rating == arr[i].rating){
+// newArr.push(arr[i]);
+
+//     }
+//   }
+//   return newArr;
+//   }
+  
+// console.log(getReviewByRating(reviews, 4));
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
@@ -255,14 +273,20 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(arr, index) {
+  for (let i=0;i<=arr.length; i++);{
+    if(arr[i] === artists[i]){
+      arr.push(arr[i]);
+    }
   }
-  
+  return artists.splice;
+  }
  
-
+console.log(removeArtist(artists,0));
+console.log(artists(id));
 /**
-/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
+/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array.
+Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
 For example, you could add the following information: 
 id: 20,
@@ -288,7 +312,7 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(arr){
 
   /* Code here */
 
